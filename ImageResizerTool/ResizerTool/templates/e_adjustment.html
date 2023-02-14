@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example template</title>
+    <link rel="stylesheet" href="{% static 'css/on-adjustment.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js" integrity="sha512-RUkwGPgBmjCwqXpCRzpPPmGl0LSFp9v5wXtmG41+OS8vnmXybQX5qiG5adrIhtO03irWCXl+z0Jrst6qeaLDtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div align="center">
+        <div class="card">
+            <img src="{{img}}" alt="Card Image" id ="img">
+          </div>        
+    </div>
+    <div align = "center" class="range-bars">
+        <p>Slide The Buttons To Adjust</p>
+        <h2>Brightness</h2>
+        <input type="range" class="range-bar" min="0" max="5"  value="1"   step=".1" id ="bri">
+        <h2>Contrast</h2>
+        <input type="range" class="range-bar" min="0" max="5"   value="1"    step=".1"  id ="con">
+        <h2>Sharpness</h2>
+        <input type="range" class="range-bar" min="0" max="5"  value="1"   step="1"  id ="sharp" >
+    </div>
+    
+    <br>
+    <div align="center">
+        <button class="btn3d" id="download">Download Now</button>
+        <button class="btn3d" id ="reset">Reset</button>
+        <button class="btn3d" id ="resize">Resize Now</button>
+        <button class="btn3d" id ="filter">Add Filter</button>
+        <input type="hidden" id="id" value="{{id}}">
+        <input type="hidden" id="pic_name" value="{{old_pic_name}}">
+    </div>
+    
+    
+<script src="{% static 'js/e_adjustment.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/af_upload.css' %}">
+    <title>Decesion 2</title>
+</head>
+<body>
+
+
+
+    <div align = "center" >
+
+        <div align="center">
+          <div class="card">
+              <img src="{{img}}" alt="Card Image" id = "image">
+            </div>        
+        </div><br><br>
+        <br>
+  
+        <a href="{% url 'ResizerTool:enhancement_adjust' id=id %}"   class="button"   id="e_adjust"  >
+  
+          Adjust Enhancement
+  
+        </a>
+  
+        <a href="{% url 'ResizerTool:filter' id=id %}"   class="button"   id="filter" >
+  
+          Add Image Filter
+  
+        </a>
+  
+        <a href="{% url 'ResizerTool:home' %}"   class="button">
+  
+          Upload Another
+  
+        </a>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <link rel="stylesheet" href="{% static 'css/home.css' %}">
+ <title>Document</title>
+</head>
+<body>
+
+  <div align = "center" style="margin-top: 75px;">
+    <h1> Transform Your Photos With Ease </h1>
+
+      <form>
+        <div class="img-upload-container">
+          <label for="img-upload">
+            <div class="img-upload-overlay">
+              <i class="fa fa-plus"></i>
+              <p id="upload-text">Upload Image</p>
+            </div>
+          </label>
+          <input type="file" id="img-upload" name="image" accept="image/*" onchange="changeText();">
+          
+        </div>
+        <div class="upload-btn-container" align="center">
+          <button class="d-btn" id = "u-btn">Upload</button>
+        </div>
+      </form><br><br>
+      <span id = "pic_erron"></span>
+
+    </div>
+    <div align = "center">
+      <h3>You Will Enjoy</h3>
+    </div>
+    <div align = "center" style="margin-left: 23%;">
+      <ul>
+        <li>Resizing </li>
+        <li>Adjusting Enhancement</li>
+        <li>Photo Filter</li>
+      </ul>
+    </div>
+
+ <script src="{% static 'js/home.js' %}" type="text/javascript"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,62 @@
+      /* CSS for Background */
+      
+      body {
+        background:radial-gradient(#66f7d2, #f8f8fc)
+      }
+
+
+      p {
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fa2cbc93;
+        line-height: 1.5;
+        margin: 20px 0;
+        text-align: center;
+        text-shadow: #181818;
+        
+      }
+      /* CSS for image */
+      .card {
+        width: 600px;
+        height: 400px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+      }
+      
+      .card img {
+        width: 80%;
+        height: 80%;
+        object-fit: scale-down;
+      }
+      
+      /* CSS for buttons */
+      .button {
+        display: inline-block;
+        width: 70px;
+        height: 40px;
+        margin: 10px;
+        background-color: #fa2cbc93;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transform: perspective(1px) translateZ(0);
+        transition-duration: 0.3s;
+        transition-property: transform;
+        font-size: 14px;
+      }
+
+      /* CSS for 3D effect on buttons */
+      .button:hover, .button:focus {
+        transform: scale(1.1);
+      }

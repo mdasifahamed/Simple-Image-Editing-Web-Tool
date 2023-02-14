@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/on_resize.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js" integrity="sha512-JEXkqJItqNp0+qvX53ETuwTLoz/r1Tn5yTRnZWWz0ghMKM2WFCEYLdQnsdcYnryMNANMAnxNcBa/dN7wQtESdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div align = "center">
+    <div align="center">
+      <div class="card">
+          <img src="{{img}}" alt="Card Image">
+        </div>
+      <p>Fill Up The  Fileds Below</p>       
+    </div>
+   
+    <form>
+      
+            <div class="field">
+              <select id = "unit" onchange="get_unit()">
+                  <option selected disabled >Choose Unit Type </option>
+                  <option value="pixel">Pixel</option>
+                  <option value="inch">Inch</option>
+                  <option value="cm">Centimeter</option>
+                  <option value="mm">Milimeter</option>
+              </select>
+            </div>
+          <div class="field">
+              <input type="text" id="width" placeholder="Enter Width here">
+              <input type="text" id="height" placeholder="Enter Height here">
+          </div>
+          <div class="field">
+            <select id = "quality" onchange="get_quality()">
+                <option selected disabled > Choose Picture Quality </option>
+                <option value="50">Low</option>
+                <option value="70">Low Medium</option>
+                <option value="80">Medium</option>
+                <option value="100">High</option>
+            </select>
+          </div>
+          <br><br>
+          <span id="op_error"></span><br><br>
+          
+          <div class="field">
+              <button class="button"   id="rd-btn">Resize And Download</button>
+              <button class="button"   id="re-btn">Resize And Edit</button>
+          </div>
+        </div>
+        <input type="hidden" id="id" value="{{id}}">
+        
+
+    </form>
+    
+
+  <script src="{% static 'js/resize.js' %}"></script>
+</body>
+</html>

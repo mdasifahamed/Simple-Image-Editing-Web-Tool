@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/on_resize.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js" integrity="sha512-JEXkqJItqNp0+qvX53ETuwTLoz/r1Tn5yTRnZWWz0ghMKM2WFCEYLdQnsdcYnryMNANMAnxNcBa/dN7wQtESdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div align = "center">
+    <div align="center">
+      <div class="card">
+          <img src="{{image}}" alt="Card Image">
+        </div>     
+      <p>Choose Size Preset And Image Quality</p>   
+    </div>
+    <form>
+      
+        <div class="field">
+            <select id = "size" onchange="get_size()">
+                <option selected disabled > Choose Preset </option>
+                <option value="passport">passport</option>
+                <option value="visa">Visa 2x2</option>
+                <option value="stamp">Stamp</option>
+                <option value="facebookp">Facebook Page Profile</option>
+                <option value="facebookc">Facebook page Cover</option>
+                <option value="2r">2R</option>
+                <option value="3r">3R</option>
+                <option value="4r">4R</option>
+                <option value="5r">5R</option>
+                <option value="6r">6R</option>
+            </select>
+          </div>
+          
+          <div class="field">
+            <select id = "quality" onchange="get_quality()">
+                <option selected disabled > Choose Picture Quality </option>
+                <option value="50">Low</option>
+                <option value="70">Low Medium</option>
+                <option value="80">Medium</option>
+                <option value="100">High</option>
+            </select>
+          </div>
+          <br>
+          <span id="op_error"></span><br><br>
+          
+          <div class="field">
+              <button class="button"   id="rd-btn">Resize And Download</button>
+              <button class="button"   id="re-btn">Resize And Edit</button>
+          </div>
+        </div>
+        <input type="hidden" id="id" value="{{id}}">
+        
+
+    </form>
+    
+
+  <script src="{% static 'js/preset_resize.js' %}"></script>
+</body>
+</html>

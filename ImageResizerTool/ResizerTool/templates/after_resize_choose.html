@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/af_upload.css' %}">
+    <title>Decesion 2</title>
+</head>
+<body>
+
+    <div align = "center" >
+
+        <div align="center">
+          <div class="card">
+              <img src="{{image}}" alt="Card Image" id = "image">
+            </div>
+            <p>Take Your Choice</p>        
+        </div>
+     
+  
+        <a href="{% url 'ResizerTool:resize' id=id %}"   class="button"   id="custom_resize"  >
+  
+          Custom Resize
+  
+        </a>
+  
+        <a href="{% url 'ResizerTool:resize_from_preset' id=id %}"   class="button"   id="preset_resize" >
+  
+          Choose Size From Preset
+  
+        </a>
+        <a href="{% url 'ResizerTool:decision' id=id %}"   class="button"   id="preset_resize" >
+  
+          Options Page
+  
+        </a>
+    </div>
+  
+       
+    
+</body>
+</html>

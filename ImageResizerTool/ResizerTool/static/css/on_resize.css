@@ -1,0 +1,93 @@
+      
+body {
+background:radial-gradient(#66f7d2, #f8f8fc)
+}
+
+
+p {
+ font-size: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #333333;
+ line-height: 1.5;
+ margin: 20px 0;
+ text-align: center;
+ 
+}
+
+
+.card {
+  width: 600px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.card img {
+  width: 80%;
+  height: 80%;
+  object-fit: scale-down;
+}
+  
+  /* CSS for dropdown and input fields */
+  .field {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* styling for the dropdown */
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+  }
+  select:hover, select:focus {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* styling for the text inputs */
+  input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+  }
+  input[type=text]:hover, input[type=text]:focus {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* CSS for button */
+  .button {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .button {
+    background-color: #ff5f6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px #333333;
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 4px #333333;
+  }
