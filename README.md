@@ -43,7 +43,7 @@ Just copy the url and paste it into your browser the app is live now to use it.
 
 ---
 
-## Language And Used 
+## Language And Tools Used 
 - Python
 - Django
 - Pillow
