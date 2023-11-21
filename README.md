@@ -26,15 +26,15 @@ Just copy the url and paste it into your browser the app is live now to use it.
 - Resize your photo accordingly your desired size.
 - Or you can use our predefined size presets which currently covers
  > - Passport Size
-   - Visa 2x2
-   - Stamp
-   - Facebook Page Profile
-   - Facebook page Cover
-   - 2R
-   - 3R
-   - 4R
-   - 5R
-   - 6R
+ > - Visa 2x2
+ > - Stamp
+ > - Facebook Page Profile
+ > - Facebook page Cover
+ > - 2R
+ > - 3R
+ > - 4R
+ > - 5R
+ > - 6R
 - You can adjust your image color byt adjusting hue, saturation and contrast.
 - You can also Instragram filters on your photo.
 - All the features can be used dynamically.
